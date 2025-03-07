@@ -1,6 +1,13 @@
 <script setup>
+import {onMounted} from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
-import IdopontFoglalas from './components/IdopontFoglalas.vue'
+import{useIdopontFoglalasStore} from '@/stores/foglalas.js'
+
+const idopontFoglalasStore = useIdopontFoglalasStore()
+
+onMounted(() =>{
+  idopontFoglalasStore.loadAll()
+})
 </script>
 
 <template>

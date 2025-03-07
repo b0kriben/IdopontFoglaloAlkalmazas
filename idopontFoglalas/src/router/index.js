@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import IdopontFoglalas from '../views/IdopontFoglalasView.vue'
+import IdopontFoglalasView from '../views/IdopontFoglalasView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,7 +11,7 @@ const router = createRouter({
     },
     {
       path: '/adatok',
-      name: 'AdatokFelvetele',
+      name: 'adatok',
       component: () => import('../views/AdatokFelveteleView.vue'),
     },
   ],

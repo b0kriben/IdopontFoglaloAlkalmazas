@@ -7,21 +7,20 @@ export const useIdopontFoglalasStore = defineStore('foglalas', () => {
     const foglalasok = ref([])
     const szemely = ref({})
     const toast = useToast()
-    const total = ref(0)
     
     const loadAll = () => {
-      fetch("http://localhost:3000/db")
+      fetch("http://localhost:3000/idopontok")
       .then(resp => resp.json())
-      .then(data => products.value = data)
+      .then(data => foglalasok.value = data)
     }
 
-    const saveSzemely = (p) => {
-      console.log(p)
-      products.value.push(p)
-      axios.post("http://localhost:3000/db",p)
+    const saveSzemely = (f) => {
+      console.log(f)
+      products.value.push(f)
+      axios.post("http://localhost:3000/idopontok",f)
       .then(resp => {
         console.log(resp.statusText)
-        toast("Sikeres mentés");
+        toast.success("Sikeres mentés");
       })
       .catch(() => toast.error("Hiba"))
     }
