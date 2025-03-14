@@ -1,32 +1,32 @@
 {
-    "idopontok":[
-        {
-            "id": "1",
-            "day": "Hétfő",
-            "time": "11:00",
-            "name": "Nagy Lajos",
-            "telnumber": "06708877439"
-        },
-        {
-            "id": "2",
-            "day": "Szerda",
-            "time": "8:00",
-            "name": "Kis Sándor",
-            "telnumber": "06703217544"
-        },
-        {
-            "id": "3",
-            "day": "Csütőrtök",
-            "time": "13:00",
-            "name": "Petőfi Mária",
-            "telnumber": "06707369645"
-        },
-        {
-            "id": "4",
-            "day": "Hétfő",
-            "time": "15:00",
-            "name": "Farkas Bertalan",
-            "telnumber": "06705456923"
-        }
-    ]
+  "idopontok": [
+    {
+      "id": "1",
+      "day": "Hétfő",
+      "time": "11:00",
+      "name": "Nagy Lajos",
+      "telnumber": "06708877439"
+    },
+    {
+      "id": "2",
+      "day": "Szerda",
+      "time": "8:00",
+      "name": "Kis Sándor",
+      "telnumber": "06703217544"
+    },
+    {
+      "id": "3",
+      "day": "Csütőrtök",
+      "time": "13:00",
+      "name": "Petőfi Mária",
+      "telnumber": "06707369645"
+    },
+    {
+      "id": "4",
+      "day": "Hétfő",
+      "time": "15:00",
+      "name": "Farkas Bertalan",
+      "telnumber": "06705456923"
+    }
+  ]
 }

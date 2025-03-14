@@ -15,15 +15,29 @@ export const useIdopontFoglalasStore = defineStore('foglalas', () => {
     }
 
     const saveSzemely = (f) => {
-      console.log(f)
-      products.value.push(f)
-      axios.post("http://localhost:3000/idopontok",f)
+      if (!f.name || !f.telnumber) {
+        toast.error("Kérjük, adja meg a nevet és a telefonszámot!");
+        return;
+      }
+
+      const exists = foglalasok.value.some(foglalas => 
+        foglalas.day === f.day && foglalas.time === f.time
+      );
+
+      if (exists) {
+        toast.error("Ez az időpont már foglalt!");
+        return;
+      }
+
+      foglalasok.value.push(f)
+      axios.post("http://localhost:3000/idopontok", f)
       .then(resp => {
         console.log(resp.statusText)
         toast.success("Sikeres mentés");
       })
       .catch(() => toast.error("Hiba"))
     }
-  
+
     return { foglalasok , szemely, loadAll, saveSzemely}
   })
+

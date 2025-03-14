@@ -1,7 +1,7 @@
 <template>
     <h1 class="text-center">Adatok felvétele</h1>
-    <form class="w-50 mx-auto" @submit.prevent="foglalasok.saveSzemely(szemely)">
-        <p class="m-0">Nap</p>
+    <form class="card w-50 mx-auto" @submit.prevent="foglalasok.saveSzemely(szemely)">
+        <p class="felirat m-0">Nap</p>
         <select class="select form-control mb-2" id="dayInput" name="daySelect" required  type="select" v-model="szemely.day" placeholder="Nap">
             <option value="" class="szin" disabled selected hidden>Kattintson a mezőre</option>
             <option value="hetfo">Hétfő</option>
@@ -12,7 +12,7 @@
             <option value="szombat">Szombat</option>
             <option value="vasarnap">Vasárnap</option>
         </select>
-        <p class="m-0">Idő</p>
+        <p class="felirat m-0">Idő</p>
         <select class="select form-control mb-2" id="timeInput" name="timeSelect" required  type="select" v-model="szemely.time" placeholder="Óra">
             <option value="" disabled selected hidden>Kattintson a mezőre</option>
             <option value="8:00">8:00</option>
@@ -25,10 +25,10 @@
             <option value="15:00">15:00</option>
             <option value="16:00">16:00</option>
         </select>
-        <p class="m-0">Név</p>
+        <p class="felirat m-0">Név</p>
         <input class="form-control mb-2" type="text" v-model="szemely.name" placeholder="Személy neve">
-        <p class="m-0">Telefonszám</p>
-        <input class="form-control mb-2" type="text" v-model="szemely.telnumber" placeholder="Személy telefonszáma">
+        <p class="felirat m-0">Telefonszám</p>
+        <input class="form-control mb-2" type="text" v-model="szemely.telnumber" placeholder="Személy telefonszáma"><br>
         <input class="btn btn-success" type="submit" value="Mentés">
     </form>
 </template>
@@ -44,6 +44,30 @@
             "telnumber": ""})
     
 </script>
-<style>
 
+<style>
+h1{
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+.card{
+  border: 1px solid black;
+  margin: 10px;
+  background-color: crimson;
+  color: white;
+  padding: 10px;
+}
+
+.felirat{
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.btn{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 </style>

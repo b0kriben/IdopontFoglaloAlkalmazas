@@ -17,3 +17,31 @@ const idopontFoglalasStore = useIdopontFoglalasStore()
     </div>
   </div>
 </template>
+
+<style>
+body{
+  background-color: rgb(212, 167, 255);
+}
+
+h1{
+  font-weight: bolder;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 20px;
+}
+
+.card{
+  border: 1px solid black;
+  margin: 10px;
+  background-color: crimson;
+  color: white;
+}
+
+.card-title{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.card-text{
+  font-weight: bold;
+}
+</style>
