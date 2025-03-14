@@ -13,8 +13,8 @@ onMounted(() =>{
 <template>
   <div class="container">
     <nav class="text-center">
-      <RouterLink class="btn btn-outline-dark m-2" to="/">Időpont Foglalás</RouterLink>
-      <RouterLink class="btn btn-outline-dark m-2" to="/adatok">Adatok felvétele</RouterLink>
+      <RouterLink class="btn btn-outline-info btn-dark m-2" to="/">Időpont Foglalás</RouterLink>
+      <RouterLink class="btn btn-outline-info btn-dark m-2" to="/adatok">Adatok felvétele</RouterLink>
     </nav>
     <RouterView />
   </div>

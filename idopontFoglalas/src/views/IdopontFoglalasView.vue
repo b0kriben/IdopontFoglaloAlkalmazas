@@ -27,10 +27,11 @@ h1{
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 20px;
+  color: black;
 }
 
 .card{
-  border: 1px solid black;
+  border: 3px solid black;
   margin: 10px;
   background-color: crimson;
   color: white;
@@ -39,6 +40,7 @@ h1{
 .card-title{
   font-weight: bolder;
   font-size: 25px;
+  color: rgb(13, 0, 61);
 }
 
 .card-text{

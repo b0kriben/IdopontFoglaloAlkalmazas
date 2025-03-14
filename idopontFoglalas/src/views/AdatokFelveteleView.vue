@@ -29,7 +29,7 @@
         <input class="form-control mb-2" type="text" v-model="szemely.name" placeholder="Személy neve">
         <p class="felirat m-0">Telefonszám</p>
         <input class="form-control mb-2" type="text" v-model="szemely.telnumber" placeholder="Személy telefonszáma"><br>
-        <input class="btn btn-success" type="submit" value="Mentés">
+        <input class="btn btn-outline-dark btn-info" type="submit" value="Mentés">
     </form>
 </template>
 
@@ -50,10 +50,11 @@ h1{
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 20px;
+  color: black;
 }
 
 .card{
-  border: 1px solid black;
+  border: 3px solid black;
   margin: 10px;
   background-color: crimson;
   color: white;
